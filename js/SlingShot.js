@@ -15,17 +15,19 @@ class Slingshot{
         this.sling.bodyA =null;
     }
 
+    attach(body){
+        this.sling.bodyA = body;
+    }
+
     display(){
         if(this.sling.bodyA){
             var pointA = this.sling.bodyA.position;
             var pointB = this.pointB;
             
             strokeWeight(4);
-           // write stroke() to set the color to red
-              stroke(64,224,208);
-           line(pointA.x,pointA.y,pointB.x,pointB.y)
-           // Write line() to draw a line from pointA to pointB
-
+            stroke(64,224,208)
+            line(pointA.x,pointA.y, pointB.x,pointB.y);
+            
         }
     }
     
